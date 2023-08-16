@@ -1,4 +1,4 @@
-##A Responsive portfolio ( Fronted Website ).
+## A Responsive portfolio ( Fronted Website ).
 https://sanjeetbth7.github.io/portfolio/
 
 This is a frontend portfolio website or personal page. People  use it to 
