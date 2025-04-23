@@ -56,7 +56,7 @@ ScrollReveal().reveal(".home-content p, .about-content",{ origin : 'right'})
 /* ===============  typed js  ================ */
 
 const typed = new Typed (".multiple-text", {
-    strings : ["Full Stack Developer","Blogger", "Tech Enthusiast"],
+    strings : ["Full Stack Developer","Programmer", "Tech Enthusiast"],
     typeSpeed : 100,
     backSpeed : 100,
     backDelay : 1000,
@@ -74,5 +74,5 @@ function SendMail(){
 
     let body = name+", "+number+", "+email+" -->  "+message;
 
-    window.location.href = "mailto:sanjeetkumar@engineer.com?subject="+subject+"&body="+body;
+    window.location.href = "mailto:sanjeet.er.dev@gmail.com?subject="+subject+"&body="+body;
 }

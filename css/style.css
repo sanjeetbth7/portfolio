@@ -130,6 +130,12 @@ span {
     font-size: 1.6rem;
 }
 
+.social-media {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -252,28 +258,56 @@ span {
     margin-bottom: 4rem;
 }
 
-.project-container {
+/* .project-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5rem;
+} */
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
 }
 
-.project-container .project-box {
+/* .project-container .project-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+} */
+
+.project-container .project-box {
+    flex: 1 1 300px; /* Grow and shrink with a base width of 300px */
+    max-width: 400px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.project-container .project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
 .project-box img {
+    aspect-ratio: 3/2;
     width: 100%;
     transition: .5s ease;
 }
 
 .project-box:hover img{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .project-box .project-layer{
@@ -282,7 +316,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.482) ,var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, 0.482) ,rgb(6, 68, 71));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,6 +326,7 @@ span {
     overflow: hidden;
     transform: translateY(100%);
     transition: .5s ease;
+    aspect-ratio: 1/2;
 }
 
 .project-box:hover .project-layer {
@@ -299,7 +334,8 @@ span {
 }
 
 .project-layer h4 {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    color: var(--main-color);
     /* margin: .3rem 0 1rem; */
 }
 
